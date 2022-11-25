@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <unistd.h>
 
-#define  UNUSEDD(x) (void)(x)
+#define  UNUSED(x) (void)(x)
 #define BUFF_SIZE 1024
 
 /*FLAGS*/
@@ -21,7 +21,7 @@
 /**
  * struct fmt - struct op
  * @fmt: the format
- * @fn: the function
+ * @fn: the function associated
  */
 struct fmt
 {
@@ -64,7 +64,7 @@ int print_hexadecimal(va_list types, char buffer[],
 		int flags, int width, int precision, int size);
 int print_hexa_upper(va_list types, char buffer[],
 		int flags, int width, int precision, int size);
-int print_hexa(va_list types, char map__to[],
+int print_hexa(va_list types, char map_to[],
 		char buffer[], int flags, char flag_ch, int width, int size);
 
 /* Function to print non printable characters */

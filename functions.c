@@ -3,7 +3,7 @@
 /************************* PRINT CHAR *************************/
 /**
  * print_char - Prints a char
- * @types: List a of arguments
+ * @types: List of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
  * @width: Width
@@ -21,13 +21,13 @@ int print_char(va_list types, char buffer[],
 /************************* PRINT A STRING *************************/
 /**
  * print_string - Prints a string
- * @types: List a of arguments
+ * @types: List of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
  * @width: get width
  * @precision: Precision specification
  * @size: Size specifier
- * Return: Number of chars printedv
+ * Return: Number of chars printed
  */
 int print_string(va_list types, char buffer[],
 		int flags, int width, int precision, int size)
@@ -117,6 +117,7 @@ int print_int(va_list types, char buffer[],
 
 	if (n == 0)
 		buffer[i--] = '\0';
+
 	buffer[BUFF_SIZE - 1] = '\0';
 	num = (unsigned  long int)n;
 
@@ -131,7 +132,7 @@ int print_int(va_list types, char buffer[],
 		num /= 10;
 	}
 	i++;
-	return (write_number(is_negative, i, buffer, flags, qidth, precision, size));
+	return (write_number(is_negative, i, buffer, flags, width, precision, size));
 }
 /************************* PRINT BINARY *************************/
 /**
