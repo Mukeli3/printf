@@ -8,7 +8,7 @@ i#include "main.h"
  * @buffer: buffer array to handle print
  * @flags: calculates active  flags
  * @width: get width
- * @precision: precision speccification
+ * @precision: precision specification
  * @size: size specifier
  * Return: 1 or 2;
  */

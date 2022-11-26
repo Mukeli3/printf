@@ -12,8 +12,8 @@ int is_printable(char c)
 	return (0);
 }
 /**
- * append_hexa_code - Append ascci in hexadecimal code to buffer
- * @buffer:  array of charrs
+ * append_hexa_code - Append ascii in hexadecimal code to buffer
+ * @buffer:  array of chars
  * @i: index at which  to start appending
  * @ascii_code: ASCII CODE
  * Return: always 3
@@ -55,6 +55,7 @@ long int convert_size_number(long int num, int size)
 		return (num);
 	else if (size == S_SHORT)
 		return ((short)num);
+
 	return ((int)num);
 }
 /**
