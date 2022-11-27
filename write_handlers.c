@@ -62,7 +62,7 @@ int write_number(int is_negative, int ind, char buffer[],
 
 	if ((flags & F_ZERO) && !(flags & F_MINUS))
 		padd =  '0';
-	if (is negative)
+	if (is_negative)
 		extra_ch = '-';
 	else if (flags & F_PLUS)
 		extra_ch = '+';
@@ -214,7 +214,7 @@ int write_pointer(char buffer[], int ind, int length,
 		}
 		else if (!(flags & F_MINUS) && padd == '0')/* extra char to left of padd */
 		{
-			if (extra c)
+			if (extra_c)
 				buffer[--padd_start] = extra_c;
 			buffer[1] = '0';
 			buffer[2] = 'x';
@@ -224,7 +224,7 @@ int write_pointer(char buffer[], int ind, int length,
 	}
 	buffer[--ind] = 'x';
 	buffer[--ind] = '0';
-	if (extra c)
+	if (extra_c)
 		buffer[--ind] = extra_c;
 	return (write(1, &buffer[ind], BUFF_SIZE - ind - 1));
 }
