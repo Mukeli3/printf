@@ -18,6 +18,6 @@ int get_size(const char *format, int *i)
 	if (size == 0)
 		*i = curr_i - 1;
 	else if
-		*i = curr_i;
+		(*i = curr_i);
 	return (size);
 }

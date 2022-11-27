@@ -12,7 +12,7 @@ int is_printable(char c)
 	return (0);
 }
 /**
- * append_hexa_code - Append ascii in hexadecimal code to buffer
+ * append_hexa_code - Append ascci in hexadecimal code to buffer
  * @buffer:  array of chars
  * @i: index at which  to start appending
  * @ascii_code: ASCII CODE
